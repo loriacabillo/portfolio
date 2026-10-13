@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loria Cabillo | Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="profile.png">
+  <meta name="description" content="Portfolio of Loria Cabillo, a student learning web development.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/profile.png" type="image/png">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home">Loria Cabillo</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm Loria Cabillo.</h1>
+        <p class="lead">I am a 4th-year student at Cebu Eastern College, Incorporated learning web development. I like building simple, clean websites that are easy to use.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <img class="portrait" src="images/profile.png" alt="My Profile" width="400" height="400">
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <p>I am a 4th-year student at Cebu Eastern College, Incorporated, studying Information Technology and learning web development on the side. I enjoy solving problems step by step, and I am working to improve my skills with every project I finish.</p>
+      <p>I am open to internships, entry-level roles, and opportunities to learn from experienced developers.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li><strong>HTML and CSS</strong><span>Learning</span></li>
+        <li><strong>JavaScript</strong><span>Beginner</span></li>
+        <li><strong>Networking</strong><span>Learning</span></li>
+        <li><strong>Game Development</strong><span>Learning</span></li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <img src="images/project1.png" alt="Screenshot of Happy Birthday Website" loading="lazy" width="640" height="400">
+          <div class="project-body">
+            <h3>Happy Birthday Website</h3>
+            <p>A simple, animated birthday greeting website.</p>
+            <p><strong>My contribution:</strong> Designed the layout and implemented the animations.</p>
+            <button type="button" class="project-link" data-project="1">View project</button>
+          </div>
+        </article>
+        <article class="project">
+          <img src="images/project2.png" alt="Screenshot of Patentiro Game" loading="lazy" width="640" height="400">
+          <div class="project-body">
+            <h3>Patentiro Game</h3>
+            <p>A simple puzzle game created for a class assignment.</p>
+            <p><strong>My contribution:</strong> Designed the game mechanics and implemented the user interface.</p>
+            <button type="button" class="project-link" data-project="2">View project</button>
+          </div>
+        </article>
+        <article class="project">
+          <img src="images/project3.png" alt="Screenshot of Group Demo" loading="lazy" width="640" height="400">
+          <div class="project-body">
+            <h3>Group Demo</h3>
+            <p>A collaborative demonstration project created for a class assignment.</p>
+            <p><strong>My contribution:</strong> Developed the front-end interface and integrated the back-end API.</p>
+            <button type="button" class="project-link" data-project="3">View project</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is by email.</p>
+      <p><a class="btn primary" id="emailBtn" href="mailto:loriacabillo06@gmail.com" target="_blank" rel="noopener">Email me</a></p>
+      <div class="email-box" id="emailBox" hidden>
+        <span>My Gmail:</span>
+        <strong id="emailText">loriacabillo06@gmail.com</strong>
+        <button type="button" class="copy-btn" id="copyBtn">Copy</button>
+      </div>
+      <p class="links">
+        <a href="https://github.com/loriacabillo">GitHub</a>
+        <a href="assets/resume.pdf">Download resume (optional)</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Loria Cabillo. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+
+  <dialog id="projectModal" class="modal" aria-labelledby="modalTitle">
+    <button type="button" class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <img id="modalImg" src="" alt="" width="640" height="400">
+    <div class="modal-body">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p><strong>My contribution:</strong> <span id="modalRole"></span></p>
+      <p><strong>Tools used:</strong> <span id="modalTools"></span></p>
+      <p class="links" id="modalLinks"></p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
